@@ -4,68 +4,106 @@
   <meta charset="UTF-8">
   <title>AstralCosmic - Team Rocket SFS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
       color: white;
-      text-align: center;
+      background: black;
+      overflow-x: hidden;
+    }
+
+    /* Background animasi bintang */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: moveStars 100s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 5000px; }
     }
 
     header {
-      padding: 50px 20px;
+      text-align: center;
+      padding: 100px 20px;
     }
 
     h1 {
-      font-size: 48px;
-      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 60px;
       color: #00f7ff;
-      text-shadow: 0 0 20px #00f7ff;
+      text-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 18px;
       max-width: 600px;
-      margin: 20px auto;
+      margin: 0 auto 30px auto;
+      font-size: 18px;
       opacity: 0.9;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background: #00f7ff;
-      color: black;
+      padding: 15px 35px;
+      background: transparent;
+      border: 2px solid #00f7ff;
+      color: #00f7ff;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
-      transition: 0.3s;
+      border-radius: 40px;
+      transition: 0.4s;
+      box-shadow: 0 0 15px #00f7ff;
     }
 
     .btn:hover {
-      background: white;
+      background: #00f7ff;
+      color: black;
+      box-shadow: 0 0 40px #00f7ff;
       transform: scale(1.1);
     }
 
     section {
-      padding: 40px 20px;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00f7ff;
+      margin-bottom: 20px;
     }
 
     footer {
-      margin-top: 50px;
-      padding: 20px;
-      background: rgba(0,0,0,0.4);
+      text-align: center;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
       font-size: 14px;
+      margin-top: 50px;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>🚀 AstralCosmic</h1>
-    <p>Team Rocket resmi di Spaceflight Simulator (SFS).  
-    Menjelajah angkasa, membangun roket epik, dan menaklukkan galaksi bersama.</p>
+    <p>Team Rocket Spaceflight Simulator yang menjelajah galaksi dan membangun roket epik bersama.</p>
 
     <a class="btn" href="https://whatsapp.com/channel/0029VbBZnDNCsU9Gs8R4H00u" target="_blank">
       🔗 Gabung Saluran WhatsApp
@@ -74,17 +112,12 @@
 
   <section>
     <h2>🌌 Tentang Kami</h2>
-    <p>
-      AstralCosmic adalah tim eksplorasi luar angkasa di SFS.  
-      Kami fokus pada desain roket, misi planet, dan ekspedisi luar angkasa kreatif.
-    </p>
+    <p>AstralCosmic adalah komunitas SFS yang fokus pada desain roket futuristik, misi planet, dan eksplorasi luar angkasa kreatif.</p>
   </section>
 
   <section>
     <h2>🔥 Visi Kami</h2>
-    <p>
-      Menjadi tim Spaceflight Simulator paling solid, inovatif, dan aktif di Indonesia.
-    </p>
+    <p>Menjadi tim Spaceflight Simulator paling solid dan inovatif di galaksi Indonesia.</p>
   </section>
 
   <footer>
